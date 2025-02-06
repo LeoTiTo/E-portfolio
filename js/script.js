@@ -51,7 +51,21 @@ window.onscroll = () => {
     let footer = document.querySelector('footer');
 
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
-}   
+    window.addEventListener('scroll', function() {
+        let footer = document.querySelector('.footer');
+        if (footer) {
+            footer.classList.add('show-animate');
+        }
+    });
+
+}
+
+window.addEventListener('scroll', function() {
+    let contactSection = document.querySelector('.contact');
+    if (contactSection) {
+        contactSection.classList.add('show-animate');
+    }
+});
 
 /*============= Dark light mode ===============*/
 
