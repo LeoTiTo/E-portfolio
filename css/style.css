@@ -34,6 +34,10 @@ body {
     color: var(--text-color);
 }
 
+html, body {
+    overflow-y: auto !important;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -99,7 +103,6 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('/images/heart.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -370,7 +373,6 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: auto;
     padding-bottom: 5rem;
 }
 
@@ -459,7 +461,6 @@ span {
 /******************************************COMPETENCE CSS************************************************************************/
 
 .skills {
-    min-height: auto;
     padding-bottom: 7rem;
     background: var(--second-bg-color);
 }
@@ -581,8 +582,8 @@ span {
 /******************************************CONTACT CSS************************************************************************/
 
 .contact {
-    min-height: auto;
-    padding-bottom: 7rem;
+    min-height: 100vh;
+    padding-bottom: 10rem;
 }
 
 .contact h2 {
